@@ -66,7 +66,7 @@ color: #43A735;
     max-width: 100%;
     height: 0.28rem;
     background: #FFC400;
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 .resume-text{
     color: #ff4f84;
@@ -167,6 +167,12 @@ color: #43A735;
 }
 .tech-container-3{
     background-image: linear-gradient(to top, #9babee 0%, rgb(109, 94, 200) 100%);
+}
+.tech-container-4{
+    background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .skill-title{
     font-size: .95rem;
