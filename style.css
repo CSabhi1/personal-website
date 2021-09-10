@@ -133,6 +133,15 @@ color: #43A735;
     margin-bottom: .5vh;
     
 }
+.project-line-7{
+    width: 2rem;
+    max-width: 100%;
+    height: 0.1rem;
+    background: #FAAD80;
+    margin-top: 2vh;
+    margin-bottom: .5vh;
+    
+}
 .project-line-non{
     width: 2rem;
     max-width: 100%;
@@ -155,13 +164,37 @@ color: #43A735;
     font-size: 14px;
 }
 .technology-text{
-    color: rgb(24, 24, 24);
+    color: rgb(187, 187, 187);
     letter-spacing: 1px;
     font-size: 14px;
     text-decoration: none;
 }
 .Technologies-title{
-    color: rgb(0, 0, 0);
+    color: #f80759;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.Technologies-title-p2{
+    color: rgb(255, 196, 0);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.Technologies-title-p3{
+    color: rgb(20, 204, 96);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.Technologies-title-p4{
+    color:rgb(109, 94, 200);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.Technologies-title-p7{
+    color:#FAAD80;
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 16px;
@@ -179,10 +212,7 @@ color: #43A735;
     background-image: linear-gradient(to top, #9babee 0%, rgb(109, 94, 200) 100%);
 }
 .tech-container-4{
-    background: #bc4e9c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   
 }
 .skill-title{
     font-size: .95rem;
