@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 body::-webkit-scrollbar {
   display: none;
 }
@@ -51,9 +52,9 @@ color: #43A735;
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
     letter-spacing: 4px;
     line-height: normal;
-    font-size: 4.3rem;
+    font-size: 4.4rem;
     font-weight: 800;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
   }
 .bio{
     font-size: 1rem;
@@ -65,7 +66,7 @@ color: #43A735;
 .title-hr {
     width: 9rem;
     max-width: 100%;
-    height: 0.28rem;
+    height: 0.1rem;
     background: #FFC400;
     margin-top: 6vh;
 }
@@ -216,6 +217,60 @@ color: #43A735;
 }
 .skill-title{
     font-size: .95rem;
+}
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ff4f84;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .7s infinite alternate;
+    pointer-events: none;
+    z-index: 200;
+}
+.cursor::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 5px solid #ff4f84;
+    border-radius: 50%;
+    opacity: .5;
+    top: -1px;
+    left: -1px;
+    animation: cursorAnim2 .7s infinite alternate;
+}
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 /* .dot1{
     width: 110px;

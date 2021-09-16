@@ -61,17 +61,17 @@
 		<div class="row pt-5 pb-5 box  " style="background: transparent;">
 			<div style="background: transparent;" class="col-sm-9 content ">
 
-				<H1 style="font-size: 47px;" class="intro mt-4 "> Hi There !</H1>
-				<H1 class="intro mt-1"> I'm Abhijith C S</H1>
+				<H1 style="font-size: 42px; font-weight: 500; color: white; letter-spacing: 0px;" class="intro mt-4 "> Hi There !</H1>
+				<H1 class="intro mt-3"> I'm Abhijith C S</H1>
 				<div class="title-hr"></div>
 				<h6 class="bio">Front-end developer who is passionate about learning new things. I have experience in
-					Angular
+					Angular,
 					JavaScript and Node js 
 				</h6>
 				<br>
 
 				<a href="./Resume.pdf">
-					<button class="btn" style="border: 1px solid #ff4f84; color: #ff4f84;">Resume &nbsp; <i
+					<button class="btn mt-3" style="border: 1px solid #ff4f84; color: #ff4f84;">Resume &nbsp; <i
 							class="fas fa-long-arrow-alt-right"></i> </button>
 				</a>
 
@@ -168,6 +168,30 @@
 		</div>
 
 		<div style="margin-left: 2px;" class="row p-0 m-0 ">
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 p-0 pr-4  mt-4">
+				<div class="skill-card p-0 m-0">
+					<div class="skill-card-wrap p-0 m-0 pb-1">
+						<div style="background-color: #0D0A1B;" class="m-0 p-2">
+							<img class="float-right" width="30" src="./images/html.png" alt="Abhijith C S">
+							<br>
+							<span class="skill-title" style="color: rgb(189, 189, 189);">HTML</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 p-0 pr-4  mt-4">
+				<div class="skill-card p-0 m-0">
+					<div class="skill-card-wrap p-0 m-0 pb-1">
+						<div style="background-color: #0D0A1B;" class="m-0 p-2">
+							<img class="float-right" width="30" src="./images/css.png" alt="Abhijith C S">
+							<br>
+							<span class="skill-title" style="color: rgb(189, 189, 189);">CSS</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 p-0 pr-4 mt-4">
 				<div class="skill-card p-0 m-0">
@@ -416,7 +440,24 @@
 		</div>
 	</div>
 
+	<div class="cursor"></div>
+	<script>
+        const cursor = document.querySelector('.cursor');
 
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+
+    </script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
