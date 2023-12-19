@@ -1,0 +1,63 @@
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+  }
+.loader .blinder-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    transform-origin: top;
+  }
+  .loader .blinder-container .blinder {
+    background: #000000;
+    height: 100vh;
+    flex: 1;
+    transform-origin: top;
+  }
+  .loader svg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 7vw;
+  }
+  
+  .drip-loader {
+    animation: animateDrips 1s infinite;
+  }
+  
+  @keyframes animateDrips {
+    to {
+      transform: translateY(100px);
+    }
+  }
+
+.wrapper{
+    overflow: hidden;
+}
+  h1 {
+    display: block;
+    animation: reveal .5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  }
+
+  @keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
+  .content{
+    display: none;
+  }
