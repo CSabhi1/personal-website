@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 body::-webkit-scrollbar {
     display: none;
@@ -28,11 +28,7 @@ html {
 }
 
 .a {
-    color: #43A735;
-}
-
-.tree {
-    margin-top: 7vh;
+    color: #43a735;
 }
 
 .navbar {
@@ -43,13 +39,16 @@ html {
 
 .nav-bar-dots {
     font-weight: 900;
-    color: #737FFA;;
+    color: #737ffa;
 }
 
+.nav-link {
+    font-size: 1.05vw !important;
+}
 
 .logo {
-    font-family: 'Niconne', cursive;
-    font-size: 1.9rem !important;
+    font-family: "Niconne", cursive;
+    font-size: 1.9vw !important;
 }
 
 .box {
@@ -62,20 +61,35 @@ html {
 }
 
 .intro-sub {
-    background: linear-gradient(to right, rgb(64, 234, 245), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255));
+    background: linear-gradient(to right,
+            rgb(64, 234, 245),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255),
+            rgb(80, 77, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 .intro {
-    background-color: #CA4246;
+    background-color: #ca4246;
     /* background-image: linear-gradient(121deg, #ff4f84 0%, #e237f9 22%, #9078e4 41%, #737ffa 69%, #6ef9d0 80%); */
-    background-image: linear-gradient(121deg, #ff4f84 0%, #ff4f84 20%, #9078e4 41%, #737ffa 69%, #6ef9d0 80%);
+    background-image: linear-gradient(121deg,
+            #ff4f84 0%,
+            #ff4f84 20%,
+            #9078e4 41%,
+            #737ffa 69%,
+            #6ef9d0 80%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -83,26 +97,18 @@ html {
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
     letter-spacing: 4px;
     line-height: normal;
-    font-size: 4.4rem;
+    font-size: 4.4vw;
     font-weight: 600;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
 .bio {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     color: rgb(152, 152, 158);
-    margin-top: 5vh;
+    margin-top: 8vh;
     font-weight: 400;
-    letter-spacing: 3px;
-    line-height: 1.8rem;
-}
-
-.title-hr {
-    width: 9rem;
-    max-width: 100%;
-    height: 0.1rem;
-    background: #FFC400;
-    margin-top: 6vh;
+    letter-spacing: 2px;
+    line-height: 1.8vw;
 }
 
 .resume-text {
@@ -112,59 +118,81 @@ html {
 }
 
 .skills {
-    background: linear-gradient(to right, rgb(64, 234, 245), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255));
+    /* background: linear-gradient(to right, rgb(64, 234, 245), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    -webkit-text-fill-color: transparent; */
+    font-size: 1.5vw;
     font-weight: 700;
     letter-spacing: 2px;
+
+    color: transparent;
+    background: linear-gradient(124deg,
+            #ff4f84 18%,
+            #000 18%,
+            #000 19%,
+            #737ffa 19%,
+            #737ffa 35%,
+            #000 35%,
+            #000 36%,
+            #6ef9d0 36%,
+            #6ef9d0 58%,
+            #000 58%,
+            #000 59%,
+            #e1ed2f 59%,
+            #e1ed2f 79%,
+            #000 79%,
+            #000 80%,
+            #c318be 80%,
+            #c318be 100%);
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    transition: all 0.5s;
 }
 
 .skill-card {
     background-color: #000000;
-    border-top: 1px solid rgb(56, 56, 56);
-    border-left: 1px solid rgb(56, 56, 56);
-    border-right: 1px solid rgb(56, 56, 56);
+    border-top:   1px solid rgb(31, 31, 31);
+    border-left:  1px solid rgb(31, 31, 31);
+    border-right:  1px solid rgb(31, 31, 31);
 }
 
 .skill-card-wrap {
-    background-image: linear-gradient(121deg, #ff4f84 0%, #cc67b6 32%);
+    /* background-image: linear-gradient(121deg, #ff4f84 0%, #cc67b6 32%); */
+    background-image: linear-gradient(121deg, #a3a3a3 0%, #8f8f8f 32%);
+    padding-bottom: 2px;
 }
 
 .project {
-
     /* border: 1px solid rgb(56, 56, 56); */
-
 }
 
 .project-line {
     width: 2rem;
     max-width: 100%;
     height: 0.1rem;
-    background: rgb(255, 196, 0);
+    background: #e1ed2f;
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-line-2 {
     width: 2rem;
     max-width: 100%;
     height: 0.1rem;
-    background: rgb(20, 204, 96);
+    background: #6ef9d0;
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-line-3 {
     width: 2rem;
     max-width: 100%;
     height: 0.1rem;
-    background: rgb(109, 94, 200);
+    background: #c318be;
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-line-5 {
@@ -173,18 +201,16 @@ html {
     height: 0.1rem;
     background: #f80759;
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-line-7 {
     width: 2rem;
     max-width: 100%;
     height: 0.1rem;
-    background: #FAAD80;
+    background: #737ffa;
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-line-non {
@@ -193,22 +219,21 @@ html {
     height: 0.1rem;
 
     margin-top: 2vh;
-    margin-bottom: .5vh;
-
+    margin-bottom: 0.5vh;
 }
 
 .project-title {
     color: rgb(194, 194, 194);
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 15px;
-
+    font-size: 1.2vw;
 }
 
 .project-text {
     color: rgb(97, 97, 97);
     letter-spacing: 1px;
     font-size: 14px;
+    display: inline-block;
 }
 
 .technology-text {
@@ -247,7 +272,7 @@ html {
 }
 
 .Technologies-title-p7 {
-    color: #FAAD80;
+    color: #faad80;
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 16px;
@@ -269,10 +294,8 @@ html {
     background-image: linear-gradient(to top, #9babee 0%, rgb(109, 94, 200) 100%);
 }
 
-.tech-container-4 {}
-
 .skill-title {
-    font-size: .95rem;
+    font-size: 0.95vw;
 }
 
 .cursor {
@@ -283,7 +306,7 @@ html {
     position: absolute;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
-    animation: cursorAnim .7s infinite alternate;
+    animation: cursorAnim 0.7s infinite alternate;
     pointer-events: none;
     z-index: 200;
 }
@@ -295,10 +318,10 @@ html {
     position: absolute;
     border: 5px solid #ff4f84;
     border-radius: 50%;
-    opacity: .5;
+    opacity: 0.5;
     top: -1px;
     left: -1px;
-    animation: cursorAnim2 .7s infinite alternate;
+    animation: cursorAnim2 0.7s infinite alternate;
 }
 
 @keyframes cursorAnim {
@@ -307,7 +330,7 @@ html {
     }
 
     to {
-        transform: scale(.7);
+        transform: scale(0.7);
     }
 }
 
@@ -317,7 +340,7 @@ html {
     }
 
     to {
-        transform: scale(.4);
+        transform: scale(0.4);
     }
 }
 
@@ -346,19 +369,36 @@ html {
     font-size: 18px !important;
 }
 
-
 @media (max-width: 576px) {
     .landing-page-img {
         background-image: none;
     }
 
     .intro {
-        font-size: 2rem;
+        font-size: 2vw;
         font-weight: 700;
     }
 
     .resume {
         margin-top: 4rem !important;
+    }
+
+    .name-h {
+        font-size: 12.7vw !important;
+        font-weight: 700 !important;
+        line-height: 1.05em;
+        letter-spacing: 0.5vw;
+    }
+
+    .logo {
+        font-size: 5.9vw !important;
+    }
+
+    .bio {
+        font-size: 6.2vw;
+        letter-spacing: 1px;
+        line-height: 6.8vw;
+        margin-top: 4vh;
     }
 }
 
@@ -372,9 +412,7 @@ html {
     .landing-page-img {
         background-image: none;
     }
-
 }
-
 
 .container-fluid {
     display: flex;
@@ -383,18 +421,99 @@ html {
     overflow: auto;
 }
 
-h1 {
-    font-size: 5.3rem !important;
+.name-h {
+    font-size: 5.6vw;
     font-weight: 700 !important;
     line-height: 1.05em;
     text-transform: uppercase;
     color: transparent;
     letter-spacing: 0.5vw;
     margin: 0;
-    background: linear-gradient(124deg, #ff4f84 19%, #000 19%, #000 20%, #737ffa 20%, #737ffa 39%, #000 39%, #000 40%, #6ef9d0 40%, #6ef9d0 59%, #000 59%, #000 60%, #e1ed2f 60%, #e1ed2f 79%, #000 79%, #000 80%, #c318be 80%, #c318be 100%);
+    background: linear-gradient(124deg,
+            #ff4f84 18%,
+            #000 18%,
+            #000 19%,
+            #737ffa 19%,
+            #737ffa 35%,
+            #000 35%,
+            #000 36%,
+            #6ef9d0 36%,
+            #6ef9d0 58%,
+            #000 58%,
+            #000 59%,
+            #e1ed2f 59%,
+            #e1ed2f 79%,
+            #000 79%,
+            #000 80%,
+            #c318be 80%,
+            #c318be 100%);
     -webkit-background-clip: text;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     transition: all 0.5s;
+}
+
+.project-card {
+    width: 87%;
+    min-height: 15vw;
+    top: 0;
+    /* background-color: #0f0f0f; */
+    background-color: #000000;
+    z-index: 10;
+    position: relative;
+    border: 1px solid rgb(31, 31, 31);
+}
+
+.project-background {
+    margin-top: -12vw;
+    min-height: 12vw;
+    border-radius: 2px;
+}
+
+.project-background-ekart {
+    background-color: #737ffa;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%232100FA'/%3E%3Cstop offset='1' stop-color='%23737FFA'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%234a40fa'/%3E%3Cstop offset='1' stop-color='%23737FFA'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+.project-background-dm {
+    background-color: #ff4f84;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FF0D0D'/%3E%3Cstop offset='1' stop-color='%23FF4F84'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23ff2e49'/%3E%3Cstop offset='1' stop-color='%23FF4F84'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+.project-background-moon {
+    background-color: #6ef9d0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%232FA90A'/%3E%3Cstop offset='1' stop-color='%236EF9D0'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%234fd16d'/%3E%3Cstop offset='1' stop-color='%236EF9D0'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+.project-background-johndoe {
+    background-color: #e1ed2f;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23EDAC12'/%3E%3Cstop offset='1' stop-color='%23E1ED2F'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23e7cd21'/%3E%3Cstop offset='1' stop-color='%23E1ED2F'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+.project-background-portfolio {
+    background-color: #c3077c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23C318BE'/%3E%3Cstop offset='1' stop-color='%23C3077C'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23c3109d'/%3E%3Cstop offset='1' stop-color='%23C3077C'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.child {
+    margin-top: auto;
+}
+
+.skill-icon{
+    font-size: 2.3vw;
+}
+
+.arrow-right{
+    color: white;
 }
