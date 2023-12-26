@@ -332,52 +332,6 @@ html {
     font-size: 1.2vw !important;
 }
 
-@media (max-width: 576px) {
-    .landing-page-img {
-        background-image: none;
-    }
-
-    .intro {
-        font-size: 2vw;
-        font-weight: 700;
-    }
-
-    .resume {
-        margin-top: 4rem !important;
-    }
-
-    .name-h {
-        font-size: 12.7vw !important;
-        font-weight: 700 !important;
-        line-height: 1.05em;
-        letter-spacing: 0.5vw;
-    }
-
-    .logo {
-        font-size: 5.9vw !important;
-    }
-
-    .bio {
-        font-size: 4.5vw;
-        letter-spacing: 0px;
-        line-height: 5.8vw;
-        margin-top: 4vh;
-        text-align: justify;
-    }
-}
-
-@media (max-width: 768px) {
-    .landing-page-img {
-        background-image: none;
-    }
-}
-
-@media (max-width: 978px) {
-    .landing-page-img {
-        background-image: none;
-    }
-}
-
 .container-fluid {
     display: flex;
     justify-content: start;
@@ -480,6 +434,7 @@ html {
 
 .arrow-right {
     color: white;
+    margin-top: 20px;
 }
 
 .skill-icon-small {
@@ -510,4 +465,84 @@ html {
 
 .resume-btn{
     font-size: 1vw;
+}
+
+@media (max-width: 576px) {
+    .landing-page-img {
+        background-image: none;
+    }
+
+    .intro {
+        font-size: 2vw;
+        font-weight: 700;
+    }
+
+    .resume {
+        margin-top: 4rem !important;
+    }
+
+    .name-h {
+        font-size: 12.7vw !important;
+        font-weight: 700 !important;
+        line-height: 1.05em;
+        letter-spacing: 0.5vw;
+    }
+
+    .logo {
+        font-size: 5.9vw !important;
+    }
+
+    .bio {
+        font-size: 4.5vw;
+        letter-spacing: 0px;
+        line-height: 5.8vw;
+        margin-top: 4vh;
+        text-align: justify;
+    }
+
+    .sl-icons {
+        font-size: 4.2vw !important;
+    }
+
+    .resume-btn{
+        font-size: 4vw;
+    }
+
+    .skill-icon {
+        font-size: 7.5vw;
+    }
+
+    .skill-title {
+        font-size: 3.95vw;
+    }
+
+    .skills {
+        font-size: 6vw;
+    }
+
+    .skill-icon-small {
+        font-size: 4vw;
+    }
+
+    .project-background {
+        margin-top: -25vw;
+        min-height: 25vw;
+    }
+
+    .project-title {
+        font-size: 4.2vw;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .landing-page-img {
+        background-image: none;
+    }
+}
+
+@media (max-width: 978px) {
+    .landing-page-img {
+        background-image: none;
+    }
 }
