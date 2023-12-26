@@ -126,24 +126,27 @@ html {
     letter-spacing: 2px;
 
     color: transparent;
+    /* background: linear-gradient(124deg,
+            #ff4f84 5%,
+            #000 5%,
+            #000 5.25%,
+            #737ffa 3.2%,
+            #737ffa 6.3%,
+            #000 6.3%,
+            #000 6.9%,
+            #6ef9d0 6.9%,
+            #6ef9d0 9.9%,
+            #000 9.9%,
+            #000 10.2%,
+            #e1ed2f 10.2%,
+            #e1ed2f 10.5%,
+            #000 10.5%,
+            #000 10.8%,
+            #c318be 10.8%,
+            #c318be 11.1%); */
     background: linear-gradient(124deg,
-            #ff4f84 18%,
-            #000 18%,
-            #000 19%,
-            #737ffa 19%,
-            #737ffa 35%,
-            #000 35%,
-            #000 36%,
-            #6ef9d0 36%,
-            #6ef9d0 58%,
-            #000 58%,
-            #000 59%,
-            #e1ed2f 59%,
-            #e1ed2f 79%,
-            #000 79%,
-            #000 80%,
-            #c318be 80%,
-            #c318be 100%);
+            #ffffff 0%,
+            #ffffff 100%);
     -webkit-background-clip: text;
     background-repeat: no-repeat;
     background-position: center center;
@@ -153,9 +156,9 @@ html {
 
 .skill-card {
     background-color: #000000;
-    border-top:   1px solid rgb(31, 31, 31);
-    border-left:  1px solid rgb(31, 31, 31);
-    border-right:  1px solid rgb(31, 31, 31);
+    border-top: 1px solid rgb(31, 31, 31);
+    border-left: 1px solid rgb(31, 31, 31);
+    border-right: 1px solid rgb(31, 31, 31);
 }
 
 .skill-card-wrap {
@@ -173,8 +176,6 @@ html {
     max-width: 100%;
     height: 0.1rem;
     background: #e1ed2f;
-    margin-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 .project-line-2 {
@@ -182,8 +183,6 @@ html {
     max-width: 100%;
     height: 0.1rem;
     background: #6ef9d0;
-    margin-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 .project-line-3 {
@@ -191,8 +190,6 @@ html {
     max-width: 100%;
     height: 0.1rem;
     background: #c318be;
-    margin-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 .project-line-5 {
@@ -200,8 +197,6 @@ html {
     max-width: 100%;
     height: 0.1rem;
     background: #f80759;
-    margin-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 .project-line-7 {
@@ -209,8 +204,6 @@ html {
     max-width: 100%;
     height: 0.1rem;
     background: #737ffa;
-    margin-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 .project-line-non {
@@ -239,43 +232,13 @@ html {
 .technology-text {
     color: rgb(187, 187, 187);
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 1.3vw;
     text-decoration: none;
 }
 
-.Technologies-title {
-    color: #f80759;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.Technologies-title-p2 {
-    color: rgb(255, 196, 0);
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.Technologies-title-p3 {
-    color: rgb(20, 204, 96);
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.Technologies-title-p4 {
-    color: rgb(109, 94, 200);
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.Technologies-title-p7 {
-    color: #faad80;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 16px;
+.technologies-title {
+    color: rgb(203, 203, 203);
+    font-size: .9vw;
 }
 
 .project-container {
@@ -366,52 +329,7 @@ html {
     /* Chrome 10-25, Safari 5.1-6 */
     color: linear-gradient(to right, #ffffff, #fffc00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 18px !important;
-}
-
-@media (max-width: 576px) {
-    .landing-page-img {
-        background-image: none;
-    }
-
-    .intro {
-        font-size: 2vw;
-        font-weight: 700;
-    }
-
-    .resume {
-        margin-top: 4rem !important;
-    }
-
-    .name-h {
-        font-size: 12.7vw !important;
-        font-weight: 700 !important;
-        line-height: 1.05em;
-        letter-spacing: 0.5vw;
-    }
-
-    .logo {
-        font-size: 5.9vw !important;
-    }
-
-    .bio {
-        font-size: 6.2vw;
-        letter-spacing: 1px;
-        line-height: 6.8vw;
-        margin-top: 4vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .landing-page-img {
-        background-image: none;
-    }
-}
-
-@media (max-width: 978px) {
-    .landing-page-img {
-        background-image: none;
-    }
+    font-size: 1.2vw !important;
 }
 
 .container-fluid {
@@ -456,18 +374,18 @@ html {
 
 .project-card {
     width: 87%;
-    min-height: 15vw;
+    min-height: 14.7vw;
     top: 0;
     /* background-color: #0f0f0f; */
-    background-color: #000000;
+    background-color: #0f0f0f;
     z-index: 10;
     position: relative;
     border: 1px solid rgb(31, 31, 31);
 }
 
 .project-background {
-    margin-top: -12vw;
-    min-height: 12vw;
+    margin-top: -13vw;
+    min-height: 13vw;
     border-radius: 2px;
 }
 
@@ -510,10 +428,121 @@ html {
     margin-top: auto;
 }
 
-.skill-icon{
+.skill-icon {
     font-size: 2.3vw;
 }
 
-.arrow-right{
+.arrow-right {
     color: white;
+    margin-top: 20px;
+}
+
+.skill-icon-small {
+    font-size: 1.2vw;
+    color: rgb(155, 155, 155);
+}
+
+.section-wrapper {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background: transparent;
+}
+
+.top-section {
+    background-color: #262626;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='0' stroke-opacity='0' %3E%3Ccircle fill='%23262626' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23242424' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23222222' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%231f1f1f' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%231d1d1d' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%231b1b1b' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23191919' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23161616' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23141414' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23121212' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23101010' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%230d0d0d' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%230b0b0b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23090909' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23070707' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23040404' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23020202' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23000000' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.skill-section {
+    background-color: #0d0d0d;
+}
+
+.contact-container{
+    padding-top: 5vw; 
+}
+
+.resume-btn{
+    font-size: 1vw;
+}
+
+@media (max-width: 576px) {
+    .landing-page-img {
+        background-image: none;
+    }
+
+    .intro {
+        font-size: 2vw;
+        font-weight: 700;
+    }
+
+    .resume {
+        margin-top: 4rem !important;
+    }
+
+    .name-h {
+        font-size: 12.7vw !important;
+        font-weight: 700 !important;
+        line-height: 1.05em;
+        letter-spacing: 0.5vw;
+    }
+
+    .logo {
+        font-size: 5.9vw !important;
+    }
+
+    .bio {
+        font-size: 4.5vw;
+        letter-spacing: 0px;
+        line-height: 5.8vw;
+        margin-top: 4vh;
+        text-align: justify;
+    }
+
+    .sl-icons {
+        font-size: 4.2vw !important;
+    }
+
+    .resume-btn{
+        font-size: 4vw;
+    }
+
+    .skill-icon {
+        font-size: 7.5vw;
+    }
+
+    .skill-title {
+        font-size: 3.95vw;
+    }
+
+    .skills {
+        font-size: 6vw;
+    }
+
+    .skill-icon-small {
+        font-size: 4vw;
+    }
+
+    .project-background {
+        margin-top: -25vw;
+        min-height: 25vw;
+    }
+
+    .project-title {
+        font-size: 4.2vw;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .landing-page-img {
+        background-image: none;
+    }
+}
+
+@media (max-width: 978px) {
+    .landing-page-img {
+        background-image: none;
+    }
 }
