@@ -121,6 +121,16 @@ html {
     letter-spacing: 2px;
 }
 
+.landing-page {
+    display: grid;
+    align-items: center;
+}
+
+.nav-cnt{
+    position: sticky;
+  align-self: start;
+}
+
 .skills {
     /* background: linear-gradient(to right, rgb(64, 234, 245), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255), rgb(80, 77, 255));
     -webkit-background-clip: text;
