@@ -195,8 +195,8 @@ html {
 .project-title {
 	color: rgb(194, 194, 194);
 	letter-spacing: 1px;
-	font-weight: 500;
-	font-size: 1.2vw;
+	font-weight: 400;
+	font-size: 1.1vw;
 }
 
 .project-text {
@@ -244,11 +244,11 @@ html {
 	border: 1px solid #ff4f84;
 	border-radius: 50%;
 	position: absolute;
-	transition-duration: 200ms;
+	/* transition-duration: 200ms; */
 	transition-timing-function: ease-out;
 	animation: cursorAnim 0.7s infinite alternate;
 	pointer-events: none;
-	z-index: 200;
+	z-index: 11200;
 }
 
 .cursor::after {
