@@ -71,25 +71,37 @@ class TextScramble {
 	}
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
+const createTextScramble = (
+	selector,
+	phrases,
+	delay = 3000,
+	initialDelay = 0
+) => {
+	const el = document.querySelector(selector);
+	if (!el) return;
 
-const phrases = [
-	"I'm an enthusiastic UI Developer with a strong desire to expand my knowledge and skills.",
-	"I'm always eager to learn new technologies and stay up-to-date with industry trends.",
-	"I'm passionate about creating responsive and user-friendly interfaces that provide a seamless user experience",
-];
+	const fx = new TextScramble(el);
+	let counter = 0;
 
-const el = document.querySelector(".bio");
-const fx = new TextScramble(el);
+	const next = () => {
+		fx.setText(phrases[counter]).then(() => {
+			if (phrases.length > 1) {
+				setTimeout(next, delay);
+			}
+		});
+		counter = (counter + 1) % phrases.length;
+	};
 
-let counter = 0;
-const next = () => {
-	fx.setText(phrases[counter]).then(() => {
-		setTimeout(next, 3000);
-	});
-	counter = (counter + 1) % phrases.length;
+	setTimeout(next, initialDelay);
 };
 
-next();
+// Initialize instances
+createTextScramble(".bio", [
+	"I'm an enthusiastic UI Developer with a strong desire to expand my knowledge and skills.",
+	"I'm always eager to learn new technologies and stay up-to-date with industry trends.",
+	"I'm passionate about creating user-friendly interfaces that provide a seamless user experience",
+]);
+
+createTextScramble(".name-b", ["I'm Abhijith"], 3000, 500);
+createTextScramble(".name-a", ["Hello"], 3000, 500);
+createTextScramble(".name-c", ["UI Developer"], 3000, 500);

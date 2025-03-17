@@ -11,6 +11,11 @@
 body::-webkit-scrollbar {
 	display: none;
 }
+body {
+	margin: 0;
+	padding: 0;
+	max-height: 100vh;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -28,6 +33,7 @@ html {
 	background-repeat: no-repeat;
 	background-position: 95% 20%;
 	background-size: 35%;
+	/* min-height: 101vh; */
 }
 
 .a {
@@ -318,7 +324,7 @@ html {
 
 .name-h {
 	font-size: 8vw;
-	font-weight: 600 !important;
+	font-weight: 500 !important;
 	/* line-height: 1.25em; */
 	text-transform: uppercase;
 	color: transparent;
@@ -326,23 +332,19 @@ html {
 	margin: 0;
 	background: linear-gradient(
 		124deg,
-		#ff4f84 18%,
-		transparent 18%,
-		transparent 19%,
-		#737ffa 19%,
-		#737ffa 35%,
-		transparent 35%,
-		transparent 36%,
-		#6ef9d0 36%,
-		#6ef9d0 58%,
-		transparent 58%,
-		transparent 59%,
-		#e1ed2f 59%,
-		#e1ed2f 79%,
-		transparent 79%,
-		#000 80%,
-		#c318be 80%,
-		#c318be 100%
+		#ff4f84 24%,
+		transparent 24%,
+		transparent 25%,
+		#737ffa 25%,
+		#737ffa 49%,
+		transparent 49%,
+		transparent 50%,
+		#6ef9d0 50%,
+		#6ef9d0 74%,
+		transparent 74%,
+		transparent 75%,
+		#e1ed2f 75%,
+		#e1ed2f 100%
 	);
 	-webkit-background-clip: text;
 	background-repeat: no-repeat;
@@ -457,6 +459,18 @@ html {
 		background-image: none;
 	}
 
+	.landing-page-img {
+		background: transparent;
+		/* background-image: url(./images/line2.svg); */
+		background-repeat: no-repeat;
+		/* background-position: 95% 20%;
+		background-size: 35%; */
+		min-height: none;
+	}
+	.vanta-canvas {
+		height: 100%;
+	}
+
 	.intro {
 		font-size: 2vw;
 		font-weight: 700;
@@ -468,9 +482,19 @@ html {
 
 	.name-h {
 		font-size: 12.7vw !important;
-		font-weight: 700 !important;
 		line-height: 1.05em;
 		letter-spacing: 0.5vw;
+	}
+
+	.name-a {
+		font-size: 18vw !important;
+	}
+	.name-b {
+		font-size: 11vw !important;
+	}
+
+	.name-c {
+		font-size: 9vw !important;
 	}
 
 	.logo {
@@ -531,5 +555,19 @@ html {
 @media (max-width: 978px) {
 	.landing-page-img {
 		background-image: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-container {
+		padding: 1rem;
+		padding-top: 5em;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+	.page-container {
+		padding: 1.5em;
+		padding-top: 5em;
 	}
 }
